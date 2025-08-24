@@ -94,7 +94,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-blue-600 border-t border-white/20 animate-slide-in">
+        <div className="lg:hidden bg-blue-950 border-t border-white/20 animate-slide-in">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-3">
             <a href="#inicio" className="text-white py-2 hover:text-yellow-300 transition-colors">
               Início
