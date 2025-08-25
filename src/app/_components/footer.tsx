@@ -19,21 +19,6 @@ export function Footer() {
                 </span>
               </div>
               
-              {/* Brand Logos */}
-              <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-6 pt-6">
-                <div className="text-3xl font-bold text-gray-400 hover:text-blue-900 transition-colors cursor-pointer">
-                  PROBEL
-                </div>
-                <div className="text-3xl font-bold text-gray-400 hover:text-blue-900 transition-colors cursor-pointer">
-                  CASTOR
-                </div>
-                <div className="text-3xl font-bold text-gray-400 hover:text-blue-900 transition-colors cursor-pointer">
-                  KING KOIL
-                </div>
-                <div className="text-3xl font-bold text-gray-400 hover:text-blue-900 transition-colors cursor-pointer">
-                  ORTOBOM
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -68,17 +53,6 @@ export function Footer() {
               </div>
             </Card>
 
-            <Card className="p-6 bg-white/90 backdrop-blur-xl border-gray-200/30 hover:scale-105 transition-transform cursor-pointer animate-slide-in shadow-lg" style={{ animationDelay: '0.2s' }}>
-              <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-blue-100">
-                  <Moon className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-800 text-lg">Teste de 100 Noites</p>
-                  <p className="text-sm text-gray-600">Durma bem ou devolvemos</p>
-                </div>
-              </div>
-            </Card>
           </div>
         </div>
       </section>

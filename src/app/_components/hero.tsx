@@ -51,7 +51,6 @@ export function Hero() {
                 </div>
                 <div className="text-left">
                   <p className="font-semibold text-gray-800">Entrega Expressa</p>
-                  <p className="text-sm text-gray-600">No mesmo dia</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 group cursor-pointer">
