@@ -1,96 +1,105 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Phone, Truck, Heart, Shield, Sparkles, Moon, CloudSnow } from "lucide-react"
+import { Phone, Truck, Heart, Shield, Sparkles, Moon, CloudSnow, Star, Clock, Award } from "lucide-react"
 
 export function Hero() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-gray-100 overflow-hidden relative">
+    <section className="relative min-h-[80vh] bg-gradient-hero overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5" />
-        <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white" />
+        <div className="absolute inset-0 bg-gradient-primary opacity-5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent" />
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 animate-float">
-        <Moon className="w-12 h-12 text-blue-500/20" />
+      <div className="absolute top-20 left-10 animate-float opacity-20">
+        <Moon className="w-12 h-12 text-primary" />
       </div>
-      <div className="absolute top-40 right-20 animate-float" style={{ animationDelay: '2s' }}>
-        <CloudSnow className="w-16 h-16 text-blue-500/10" />
+      <div className="absolute top-40 right-20 animate-float opacity-15" style={{ animationDelay: '2s' }}>
+        <CloudSnow className="w-16 h-16 text-primary" />
       </div>
-      <div className="absolute bottom-40 left-20 animate-float" style={{ animationDelay: '4s' }}>
-        <Sparkles className="w-10 h-10 text-purple-500/30" />
+      <div className="absolute bottom-40 left-20 animate-float opacity-25" style={{ animationDelay: '4s' }}>
+        <Sparkles className="w-10 h-10 text-accent" />
+      </div>
+      <div className="absolute top-60 left-1/2 animate-float opacity-20" style={{ animationDelay: '3s' }}>
+        <Star className="w-8 h-8 text-accent" />
       </div>
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center">
-        {/* Hero Content */}
-        <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="max-w-5xl mx-auto space-y-8 animate-fade-up">
+      <div className="container mx-auto px-4 relative">
+        <div className="flex flex-col items-center justify-center min-h-[80vh] text-center py-20">
+          {/* Badges */}
+          <div className="flex flex-wrap gap-2 justify-center mb-6 animate-fade-in">
+            <Badge variant="secondary" className="px-4 py-2 text-sm">
+              <Truck className="w-4 h-4 mr-2" />
+              Entrega no Mesmo Dia
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm">
+              <Shield className="w-4 h-4 mr-2" />
+              Garantia de Qualidade
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm">
+              <Award className="w-4 h-4 mr-2" />
+              Melhor de Hortolândia
+            </Badge>
+          </div>
 
-            {/* Main Headline */}
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-900 to-purple-600 bg-clip-text text-transparent leading-tight">
-              O Sono dos Seus Sonhos<br />
-              <span className="text-3xl md:text-5xl font-normal text-gray-800">
-                Começa Aqui
-              </span>
-            </h1>
+          {/* Main Heading */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              GR Colchões
+            </span>
+            <br />
+            <span className="text-foreground text-4xl md:text-5xl">
+              Seu Sono Perfeito Começa Aqui
+            </span>
+          </h1>
 
-            {/* Subheadline */}
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
-              Transforme suas noites com colchões premium das melhores marcas. 
-              Atendimento personalizado e entrega expressa em Hortolândia.
-            </p>
+          {/* Subheading */}
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            Transforme suas noites com colchões premium. 
+            Entrega rápida em Hortolândia, muitas vezes no mesmo dia!
+          </p>
 
-            {/* Key Features */}
-            <div className="flex flex-wrap justify-center gap-6 md:gap-10 py-6">
-              <div className="flex items-center gap-3 group cursor-pointer">
-                <div className="p-3 rounded-full bg-blue-100 group-hover:bg-blue-200 transition-colors">
-                  <Truck className="w-5 h-5 text-blue-600" />
-                </div>
-                <div className="text-left">
-                  <p className="font-semibold text-gray-800">Entrega Expressa</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 group cursor-pointer">
-                <div className="p-3 rounded-full bg-blue-100 group-hover:bg-blue-200 transition-colors">
-                  <Heart className="w-5 h-5 text-blue-600" />
-                </div>
-                <div className="text-left">
-                  <p className="font-semibold text-gray-800">Consultoria Gratuita</p>
-                  <p className="text-sm text-gray-600">Especialistas em sono</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 group cursor-pointer">
-                <div className="p-3 rounded-full bg-blue-100 group-hover:bg-blue-200 transition-colors">
-                  <Shield className="w-5 h-5 text-blue-600" />
-                </div>
-                <div className="text-left">
-                  <p className="font-semibold text-gray-800">Garantia Total</p>
-                  <p className="text-sm text-gray-600">100 dias de teste</p>
-                </div>
-              </div>
+          {/* Features */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <Heart className="w-5 h-5 text-primary" />
+              <span className="text-sm font-medium">Conforto Superior</span>
             </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Button variant="default" size="lg" className="text-lg px-10 py-7 bg-gradient-to-r from-blue-900 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
-                <Sparkles className="w-5 h-5 mr-2" />
-                Ver Coleção Premium
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-10 py-7 bg-white/80 backdrop-blur-sm border-blue-900 hover:bg-blue-100 text-blue-900">
-                <Phone className="w-5 h-5 mr-2" />
-                (19) 99946-2361
-              </Button>
+            <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <Shield className="w-5 h-5 text-primary" />
+              <span className="text-sm font-medium">10 Anos Garantia</span>
             </div>
+            <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <Clock className="w-5 h-5 text-primary" />
+              <span className="text-sm font-medium">Entrega Expressa</span>
+            </div>
+            <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <Award className="w-5 h-5 text-primary" />
+              <span className="text-sm font-medium">Qualidade Premium</span>
+            </div>
+          </div>
 
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+            <Button size="lg" variant="hero" className="text-lg px-8 py-6">
+              <Phone className="w-5 h-5 mr-2" />
+              Falar com Especialista
+            </Button>
+            <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-background/50 backdrop-blur-sm">
+              Ver Catálogo Completo
+            </Button>
+          </div>
 
+          {/* Contact Info */}
+          <div className="mt-8 p-4 bg-background/60 backdrop-blur-sm rounded-lg animate-fade-in" style={{ animationDelay: '1s' }}>
+            <a href="tel:+5519999462361" className="flex items-center gap-2 text-primary font-semibold hover:text-primary/80 transition-colors">
+              <Phone className="w-5 h-5" />
+              <span className="text-lg">(19) 99946-2361</span>
+            </a>
           </div>
         </div>
-
-
-      </section>
-    </div>
-  );
+      </div>
+    </section>
+  )
 }

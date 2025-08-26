@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 export function Footer() {
   return (
     <footer className="bg-[#05014d] text-white py-6">
@@ -10,7 +8,7 @@ export function Footer() {
           <img
             src="/imagem_gr.jpg"
             alt="Logo Colchões"
-            className="w-50 h-auto object-contain"
+            className="h-16 w-auto object-contain md:h-20 lg:h-24"
           />
         </div>
 
@@ -44,7 +42,7 @@ export function Footer() {
               aria-label="Instagram"
               className="text-white hover:text-pink-500 transition-colors"
             >
-              <svg width="25" height="25" fill="none" viewBox="0 0 24 24">
+              <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
                 <rect width="18" height="18" x="3" y="3" rx="5" stroke="currentColor" strokeWidth="2"/>
                 <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2"/>
                 <circle cx="17" cy="7" r="1.7" fill="currentColor"/>
@@ -59,7 +57,7 @@ export function Footer() {
               aria-label="Facebook"
               className="text-white hover:text-blue-400 transition-colors"
             >
-              <svg width="25" height="25" fill="none" viewBox="0 0 24 24">
+              <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
                 <rect width="18" height="18" x="3" y="3" rx="5" stroke="currentColor" strokeWidth="2"/>
                 <path d="M15 8h-2a1 1 0 0 0-1 1v2h3l-.5 2H12v6h-2v-6H8v-2h2V9a3 3 0 0 1 3-3h2v2z" fill="currentColor"/>
               </svg>
@@ -86,7 +84,7 @@ export function Footer() {
               aria-label="Youtube"
               className="text-white hover:text-red-500 transition-colors"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M23.498 6.186a2.974 2.974 0 0 0-2.09-2.107C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.408.579a2.974 2.974 0 0 0-2.09 2.107A31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .502 5.814 2.974 2.974 0 0 0 2.09 2.107C4.495 20.5 12 20.5 12 20.5s7.505 0 9.408-.579a2.974 2.974 0 0 0 2.09-2.107A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.502-5.814ZM9.75 15.5v-7l6 3.5-6 3.5Z"/>
               </svg>
             </a>

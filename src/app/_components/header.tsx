@@ -20,14 +20,14 @@ export function Header() {
       </div>
 
              {/* Main Header */}
-       <div className="container mx-auto px-4 py-0">
-         <div className="flex items-center justify-between">
+       <div className="container mx-auto px-4 py-3">
+         <div className="flex items-center justify-between h-16">
            {/* Logo - Centralizado no mobile, alinhado à esquerda no desktop */}
            <div className="flex-1 flex justify-center lg:justify-start">
              <img
                src="/imagem_gr.jpg"
                alt="Logo Colchões"
-               className="w-30 h-30 object-contain"
+               className="h-20 w-auto object-contain md:h-14 lg:h-20"
              />
            </div>
 
@@ -45,12 +45,12 @@ export function Header() {
                Produtos
                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
              </a>
-             <a href="#marcas" className="text-white font-medium hover:text-yellow-300 transition-all duration-300 relative group">
-               Marcas
-               <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
-             </a>
              <a href="#lojas" className="text-white font-medium hover:text-yellow-300 transition-all duration-300 relative group">
                Lojas
+               <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+             </a>
+             <a href="#contato" className="text-white font-medium hover:text-yellow-300 transition-all duration-300 relative group">
+               Contato
                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
              </a>
            </nav>
