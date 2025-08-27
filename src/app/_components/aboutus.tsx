@@ -32,16 +32,16 @@ export function AboutUs() {
               {/* Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">10+</div>
-                  <p className="text-sm text-muted-foreground">Anos de Experiência</p>
+                  <div className="text-3xl font-bold text-primary mb-2">2+</div>
+                  <p className="text-sm text-muted-foreground">Anos de Loja</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-2">1000+</div>
                   <p className="text-sm text-muted-foreground">Clientes Satisfeitos</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">24h</div>
-                  <p className="text-sm text-muted-foreground">Entrega Expressa</p>
+                  <div className="text-3xl font-bold text-primary mb-2">+30</div>
+                  <p className="text-sm text-muted-foreground">Modelos</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-2">100%</div>
@@ -74,6 +74,35 @@ export function AboutUs() {
               <p className="text-sm text-muted-foreground">Cuidado personalizado</p>
             </Card>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full bg-[#F6F0E9] py-6 mt-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    
+          {/* Coluna esquerda - texto e botão */}
+          <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4 px-6">
+            <h2 className="text-3xl font-bold text-gray-900">Precisa de ajuda?</h2>
+            <p className="text-xl text-green-800 font-semibold">Fale Com Um Especialista</p>
+            <a 
+              href="https://wa.me/5519999462361"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="border-2 border-green-700 text-green-700 font-bold px-6 py-2 rounded-md hover:bg-green-700 hover:text-white transition"
+            >
+              WhatsApp
+            </a>
+          </div>
+
+          {/* Coluna direita - imagem */}
+          <div className="w-full h-72 md:h-96">
+            <img 
+              src="/image-2.jpg" 
+              alt="GR Colchões" 
+              className="w-full h-full object-cover rounded-md"
+            />
+          </div>
+
         </div>
       </div>
     </section>

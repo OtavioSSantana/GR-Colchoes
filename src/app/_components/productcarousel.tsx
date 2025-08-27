@@ -11,9 +11,7 @@ const products = [
     id: 1,
     name: "Colchão Ortopédico Premium",
     description: "Suporte ideal para coluna com espuma de alta densidade",
-    price: "R$ 1.899",
-    originalPrice: "R$ 2.499",
-    image: "/imagem_gr.jpg",
+    image: "/ANJOS-Anjos-Star-One-2-1 (1).png",
     badge: "Mais Vendido",
     rating: 4.9,
     features: ["Alta Densidade", "Ortopédico", "Antialérgico"]
@@ -22,9 +20,7 @@ const products = [
     id: 2,
     name: "Colchão Memory Foam",
     description: "Tecnologia NASA com gel cooling para noites frescas",
-    price: "R$ 2.299",
-    originalPrice: "R$ 2.999",
-    image: "/imagem_gr.jpg",
+    image: "/BRILHANTE1 (1).webp",
     badge: "Premium",
     rating: 4.8,
     features: ["Memory Foam", "Gel Cooling", "Adaptável"]
@@ -33,9 +29,7 @@ const products = [
     id: 3,
     name: "Colchão Pocket Spring",
     description: "Molas ensacadas individualmente para máximo conforto",
-    price: "R$ 2.599",
-    originalPrice: "R$ 3.299",
-    image: "/imagem_gr.jpg",
+    image: "/featured-image-7.jpg",
     badge: "Luxo",
     rating: 5.0,
     features: ["Molas Pocket", "Zero Transferência", "Durável"]
@@ -44,9 +38,7 @@ const products = [
     id: 4,
     name: "Colchão Híbrido Plus",
     description: "Combinação perfeita de molas e espuma premium",
-    price: "R$ 2.899",
-    originalPrice: "R$ 3.799",
-    image: "/imagem_gr.jpg",
+    image: "/Gemini_Generated_Image_fl8phofl8phofl8p (1).png",
     badge: "Inovação",
     rating: 4.9,
     features: ["Híbrido", "Extra Conforto", "Respirável"]
@@ -157,15 +149,14 @@ export function ProductCarousel() {
                     ))}
                   </div>
 
-                  {/* Price */}
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl font-bold text-primary">{product.price}</span>
-                    <span className="text-sm text-muted-foreground line-through">{product.originalPrice}</span>
-                  </div>
                 </CardContent>
 
                 <CardFooter className="p-6 pt-0 gap-2">
-                  <Button variant="gradient" className="w-full">
+                  <Button 
+                    variant="gradient" 
+                    className="w-full"
+                    onClick={() => window.open('https://wa.me/5519999462361', '_blank')}
+                  >
                     Ver Detalhes
                   </Button>
                   <Button variant="outline" size="icon" className="shrink-0">

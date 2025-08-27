@@ -5,6 +5,28 @@ import { Phone, Truck, Heart, Shield, Sparkles, Moon, CloudSnow, Star, Clock, Aw
 export function Hero() {
   return (
     <section className="relative min-h-[80vh] bg-gradient-hero overflow-hidden">
+      {/* Hero Image */}
+      <div className="relative w-full h-screen overflow-hidden">
+        {/* Imagem de fundo */}
+        <img 
+          src="/image.jpg" 
+          alt="GR Colchões" 
+          className="w-full h-full object-cover object-[center_50%]"
+        />
+
+        {/* Gradiente por cima da imagem */}
+        <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/50 via-transparent to-blue-600/50"></div>
+
+        {/* Conteúdo sobreposto (logo e texto) */}
+        <div className="absolute inset-0 flex flex-col justify-center items-start p-8 z-10">
+          <img 
+            src="/imagem_gr.jpg" 
+            alt="Logo GR Colchões" 
+            className="w-48 md:w-60 mb-4 rounded-full"
+          />
+        </div>
+      </div>
+
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-primary opacity-5" />
@@ -31,7 +53,7 @@ export function Hero() {
           <div className="flex flex-wrap gap-2 justify-center mb-6 animate-fade-in">
             <Badge variant="secondary" className="px-4 py-2 text-sm">
               <Truck className="w-4 h-4 mr-2" />
-              Entrega no Mesmo Dia
+              Agilidade na Entrega
             </Badge>
             <Badge variant="secondary" className="px-4 py-2 text-sm">
               <Shield className="w-4 h-4 mr-2" />
@@ -57,7 +79,7 @@ export function Hero() {
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             Transforme suas noites com colchões premium. 
-            Entrega rápida em Hortolândia, muitas vezes no mesmo dia!
+            Entrega rápida em Hortolândia!
           </p>
 
           {/* Features */}
@@ -65,10 +87,6 @@ export function Hero() {
             <div className="flex items-center justify-center gap-2 text-muted-foreground">
               <Heart className="w-5 h-5 text-primary" />
               <span className="text-sm font-medium">Conforto Superior</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 text-muted-foreground">
-              <Shield className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium">10 Anos Garantia</span>
             </div>
             <div className="flex items-center justify-center gap-2 text-muted-foreground">
               <Clock className="w-5 h-5 text-primary" />
