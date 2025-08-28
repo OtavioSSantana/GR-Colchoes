@@ -59,14 +59,10 @@ export function ProductCarousel() {
   }
 
   return (
-    <section className="py-20 bg-gradient-secondary">
+    <section id="produtos" className="py-20 bg-gradient-secondary">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <Badge variant="secondary" className="mb-4">
-            <Truck className="w-4 h-4 mr-2" />
-            Entrega Grátis em Hortolândia
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Nossos Colchões Premium

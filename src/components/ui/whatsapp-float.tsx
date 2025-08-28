@@ -34,7 +34,7 @@ export function WhatsAppFloat({
     <div className="fixed bottom-6 right-6 z-50">
       <button
         onClick={handleClick}
-        className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-bounce"
+        className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-float"
         aria-label="Contatar via WhatsApp"
         title="Fale conosco no WhatsApp"
       >

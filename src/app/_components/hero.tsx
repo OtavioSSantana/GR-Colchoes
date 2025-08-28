@@ -1,10 +1,12 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Phone, Truck, Heart, Shield, Sparkles, Moon, CloudSnow, Star, Clock, Award } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative min-h-[80vh] bg-gradient-hero overflow-hidden">
+    <section id="inicio" className="relative min-h-[80vh] bg-gradient-hero overflow-hidden">
       {/* Hero Image */}
       <div className="relative w-full h-screen overflow-hidden">
         {/* Imagem de fundo */}
@@ -18,7 +20,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/50 via-transparent to-blue-600/50"></div>
 
         {/* Conteúdo sobreposto (logo e texto) */}
-        <div className="absolute inset-0 flex flex-col justify-center items-start p-8 z-10">
+        <div className="absolute inset-0 flex flex-col justify-end md:justify-center items-start p-8 z-10">
           <img 
             src="/imagem_gr.jpg" 
             alt="Logo GR Colchões" 
@@ -51,15 +53,15 @@ export function Hero() {
         <div className="flex flex-col items-center justify-center min-h-[80vh] text-center py-20">
           {/* Badges */}
           <div className="flex flex-wrap gap-2 justify-center mb-6 animate-fade-in">
-            <Badge variant="secondary" className="px-4 py-2 text-sm">
+            <Badge variant="secondary" className="w-60 flex items-center justify-center px-4 py-2 text-sm">
               <Truck className="w-4 h-4 mr-2" />
               Agilidade na Entrega
             </Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm">
+            <Badge variant="secondary" className="w-60 flex items-center justify-center px-4 py-2 text-sm">
               <Shield className="w-4 h-4 mr-2" />
               Garantia de Qualidade
             </Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm">
+            <Badge variant="secondary" className="w-60 flex items-center justify-center px-4 py-2 text-sm">
               <Award className="w-4 h-4 mr-2" />
               Melhor de Hortolândia
             </Badge>
@@ -92,7 +94,7 @@ export function Hero() {
               <Clock className="w-5 h-5 text-primary" />
               <span className="text-sm font-medium">Entrega Expressa</span>
             </div>
-            <div className="flex items-center justify-center gap-2 text-muted-foreground">
+            <div className="flex items-center justify-center gap-2 text-muted-foreground col-span-2 md:col-span-1">
               <Award className="w-5 h-5 text-primary" />
               <span className="text-sm font-medium">Qualidade Premium</span>
             </div>
@@ -100,17 +102,25 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            <Button size="lg" variant="hero" className="text-lg px-8 py-6">
+            <Button 
+              size="lg" 
+              variant="hero" 
+              className="flex-1 text-lg px-6 py-4 flex justify-center"
+              onClick={() => window.open('https://wa.me/5519999462361', '_blank')}>
               <Phone className="w-5 h-5 mr-2" />
               Falar com Especialista
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-background/50 backdrop-blur-sm">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="flex-1 text-lg px-6 py-4 bg-background/50 backdrop-blur-sm flex justify-center"
+              onClick={() => window.open('https://wa.me/5519999462361', '_blank')}>
               Ver Catálogo Completo
             </Button>
           </div>
 
           {/* Contact Info */}
-          <div className="mt-8 p-4 bg-background/60 backdrop-blur-sm rounded-lg animate-fade-in" style={{ animationDelay: '1s' }}>
+          <div className="mt-4 w-64 p-4 bg-background/60 backdrop-blur-sm rounded-lg animate-fade-in flex justify-center" style={{ animationDelay: '1s' }}>
             <a href="tel:+5519999462361" className="flex items-center gap-2 text-primary font-semibold hover:text-primary/80 transition-colors">
               <Phone className="w-5 h-5" />
               <span className="text-lg">(19) 99946-2361</span>

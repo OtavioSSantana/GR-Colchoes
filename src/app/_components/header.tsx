@@ -49,7 +49,7 @@ export function Header() {
                Lojas
                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
              </a>
-             <a href="#contato" className="text-white font-medium hover:text-yellow-300 transition-all duration-300 relative group">
+             <a href="https://wa.me/5519999462361" className="text-white font-medium hover:text-yellow-300 transition-all duration-300 relative group">
                Contato
                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
              </a>
@@ -129,11 +129,11 @@ export function Header() {
             <a href="#produtos" className="text-white py-2 hover:text-yellow-300 transition-colors">
               Produtos
             </a>
-            <a href="#marcas" className="text-white py-2 hover:text-yellow-300 transition-colors">
-              Marcas
-            </a>
             <a href="#lojas" className="text-white py-2 hover:text-yellow-300 transition-colors">
               Lojas
+            </a>
+            <a href="https://wa.me/5519999462361" className="text-white py-2 hover:text-yellow-300 transition-colors">
+              Contato
             </a>
 
             <div className="flex lg:hidden items-center justify-center gap-3">
