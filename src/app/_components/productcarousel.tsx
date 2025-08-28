@@ -9,39 +9,43 @@ import { ChevronLeft, ChevronRight, Star, Truck, Shield } from "lucide-react"
 const products = [
   {
     id: 1,
-    name: "Colchão Ortopédico Premium",
-    description: "Suporte ideal para coluna com espuma de alta densidade",
-    image: "/ANJOS-Anjos-Star-One-2-1 (1).png",
+    name: "Colchão de Mola",
+    description: "Vivencie o puro conforto",
+    image: "/BRILHANTE1 (1).webp",
     badge: "Mais Vendido",
-    rating: 4.9,
-    features: ["Alta Densidade", "Ortopédico", "Antialérgico"]
+    features: ["Molas Ensacadas", "Alta Durabilidade", "Extra Conforto"]
   },
   {
     id: 2,
-    name: "Colchão Memory Foam",
-    description: "Tecnologia NASA com gel cooling para noites frescas",
-    image: "/BRILHANTE1 (1).webp",
+    name: "Colchão de Espuma",
+    description: "Suporte firme para coluna",
+    image: "/ANJOS-Anjos-Star-One-2-1 (1).png",
     badge: "Premium",
-    rating: 4.8,
-    features: ["Memory Foam", "Gel Cooling", "Adaptável"]
+    features: ["Ortopedico", "Alta Densidade", "Anti Alérgico"]
   },
   {
     id: 3,
-    name: "Colchão Pocket Spring",
-    description: "Molas ensacadas individualmente para máximo conforto",
-    image: "/featured-image-7.jpg",
+    name: "Box Bau",
+    description: "Praticidade e espaço extra",
+    image: "/box bau.png",
     badge: "Luxo",
-    rating: 5.0,
-    features: ["Molas Pocket", "Zero Transferência", "Durável"]
+    features: ["Espaço Extra", "Durabilidade", "Personalização"]
   },
   {
     id: 4,
-    name: "Colchão Híbrido Plus",
-    description: "Combinação perfeita de molas e espuma premium",
-    image: "/Gemini_Generated_Image_fl8phofl8phofl8p (1).png",
+    name: "Travesseiro",
+    description: "Encontre o apoio ideal",
+    image: "/travesseiro.png",
     badge: "Inovação",
-    rating: 4.9,
-    features: ["Híbrido", "Extra Conforto", "Respirável"]
+    features: ["Memory Foam", "Latex", "Cervical"]
+  },
+  {
+    id: 5,
+    name: "Protetor Impermeavel",
+    description: "Proteja seu sono",
+    image: "/protetor impermeavel.webp",
+    badge: "Inovação",
+    features: ["Antialérgico", "Impermeavel", "Lavavel"]
   }
 ]
 
@@ -117,21 +121,6 @@ export function ProductCarousel() {
                 </CardHeader>
                 
                 <CardContent className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="flex items-center">
-                      {[...Array(5)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className={`w-4 h-4 ${
-                            i < Math.floor(product.rating)
-                              ? 'text-accent fill-accent'
-                              : 'text-muted'
-                          }`}
-                        />
-                      ))}
-                    </div>
-                    <span className="text-sm text-muted-foreground">({product.rating})</span>
-                  </div>
 
                   <CardTitle className="mb-2 text-xl">{product.name}</CardTitle>
                   <p className="text-muted-foreground text-sm mb-4">{product.description}</p>
