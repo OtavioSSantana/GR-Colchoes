@@ -106,7 +106,10 @@ export function Hero() {
               size="lg" 
               variant="hero" 
               className="flex-1 text-lg px-6 py-4 flex justify-center"
-              onClick={() => window.open('https://wa.me/5519999462361', '_blank')}>
+              onClick={() => window.open(
+                `https://wa.me/5519999462361?text=${encodeURIComponent("Olá! Quero falar com um especialista da GR Colchões para encontrar a opção ideal pra mim. Pode me ajudar?")}`,
+                '_blank'
+              )}>
               <Phone className="w-5 h-5 mr-2" />
               Falar com Especialista
             </Button>
@@ -114,7 +117,10 @@ export function Hero() {
               size="lg" 
               variant="outline" 
               className="flex-1 text-lg px-6 py-4 bg-background/50 backdrop-blur-sm flex justify-center"
-              onClick={() => window.open('https://wa.me/5519999462361', '_blank')}>
+              onClick={() => window.open(
+                `https://wa.me/5519999462361?text=${encodeURIComponent("Oi! Entrei pelo site da GR Colchões e gostaria de atendimento personalizado. Pode me ajudar a escolher o produto ideal?")}`,
+                '_blank'
+              )}>
               Ver Catálogo Completo
             </Button>
           </div>

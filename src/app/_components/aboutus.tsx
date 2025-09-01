@@ -85,7 +85,7 @@ export function AboutUs() {
             <h2 className="text-3xl font-bold text-gray-900">Precisa de ajuda?</h2>
             <p className="text-xl text-green-800 font-semibold">Fale Com Um Especialista</p>
             <a 
-              href="https://wa.me/5519999462361"
+              href={`https://wa.me/5519999462361?text=${encodeURIComponent("Olá! Quero falar com um especialista da GR Colchões para encontrar a opção idela pra mim. Pode me ajudar?")}`}
               target="_blank" 
               rel="noopener noreferrer"
               className="border-2 border-green-700 text-green-700 font-bold px-6 py-2 rounded-md hover:bg-green-700 hover:text-white transition"

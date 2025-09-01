@@ -28,7 +28,7 @@ export function Footer() {
           <p className="text-sm">Av. Santana, 859 - Jardim Amanda I, - Hortolândia/SP</p>
           <p className="text-sm">CEP: 13184-000</p>
           <p className="mt-2 text-sm">Tel: (19) 99946-2361</p>
-          <p className="mt-2 text-sm">Email: contato@grcolchoes.com.br</p>
+          <p className="mt-2 text-sm">Email: grcolchoes1@gmail.com</p>
         </div>
 
         {/* Coluna 4 - Redes Sociais */}

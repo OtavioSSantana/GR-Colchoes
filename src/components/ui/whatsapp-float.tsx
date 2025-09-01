@@ -9,7 +9,7 @@ interface WhatsAppFloatProps {
 
 export function WhatsAppFloat({ 
   phoneNumber = "5519999462361", 
-  message = "Olá! Gostaria de saber mais sobre os colchões da GR Colchões." 
+  message = "Oi! Entrei pelo site da GR Colchões e gostaria de atendimento personalizado. Pode me ajudar a escolher o produto ideal?" 
 }: WhatsAppFloatProps) {
   const [isVisible, setIsVisible] = useState(false)
 

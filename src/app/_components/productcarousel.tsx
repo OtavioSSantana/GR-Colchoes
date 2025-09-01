@@ -13,7 +13,8 @@ const products = [
     description: "Vivencie o puro conforto",
     image: "/BRILHANTE1 (1).webp",
     badge: "Mais Vendido",
-    features: ["Molas Ensacadas", "Alta Durabilidade", "Extra Conforto"]
+    features: ["Molas Ensacadas", "Alta Durabilidade", "Extra Conforto"],
+    whatsappMessage: "Oi! Vi os colchões de molas da GR Colchões e quero saber qual modelo combina melhor com meu perfil. Pode me mostrar as opções?"
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const products = [
     description: "Suporte firme para coluna",
     image: "/ANJOS-Anjos-Star-One-2-1 (1).png",
     badge: "Premium",
-    features: ["Ortopedico", "Alta Densidade", "Anti Alérgico"]
+    features: ["Ortopedico", "Alta Densidade", "Anti Alérgico"],
+    whatsappMessage: "Olá! Estou interessado em colchões de espuma. Pode me explicar as diferenças e me ajudar a escolher o mais confortável?"
   },
   {
     id: 3,
@@ -29,7 +31,8 @@ const products = [
     description: "Praticidade e espaço extra",
     image: "/box bau.png",
     badge: "Luxo",
-    features: ["Espaço Extra", "Durabilidade", "Personalização"]
+    features: ["Espaço Extra", "Durabilidade", "Personalização"],
+    whatsappMessage: "Olá! Vi o Box Bau no site e gostaria de saber valores e tamanhos disponíveis."
   },
   {
     id: 4,
@@ -37,7 +40,8 @@ const products = [
     description: "Encontre o apoio ideal",
     image: "/travesseiro.png",
     badge: "Inovação",
-    features: ["Memory Foam", "Latex", "Cervical"]
+    features: ["Memory Foam", "Latex", "Cervical"],
+    whatsappMessage: "Oi! Gostaria de ver as opções de travesseiros da GR Colchões para melhorar meu sono. Pode me mostrar?"
   },
   {
     id: 5,
@@ -45,7 +49,8 @@ const products = [
     description: "Proteja seu sono",
     image: "/protetor impermeavel.webp",
     badge: "Inovação",
-    features: ["Antialérgico", "Impermeavel", "Lavavel"]
+    features: ["Antialérgico", "Impermeavel", "Lavavel"],
+    whatsappMessage: "Olá! Quero saber mais sobre os protetores impermeáveis de colchão. Pode me passar os modelos disponíveis?"
   }
 ]
 
@@ -140,7 +145,10 @@ export function ProductCarousel() {
                   <Button 
                     variant="gradient" 
                     className="w-full"
-                    onClick={() => window.open('https://wa.me/5519999462361', '_blank')}
+                    onClick={() => window.open(
+                      `https://wa.me/5519999462361?text=${encodeURIComponent(product.whatsappMessage)}`,
+                      '_blank'
+                    )}
                   >
                     Ver Detalhes
                   </Button>
